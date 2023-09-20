@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	padding: 60px;
+	background-color: #121212;
+}
+
+.form-gifts {
+	position: relative;
+
+	&__input {
+		background-color: white;
+		border-radius: 5px;
+		border: 1px solid rgb(97, 32, 158);
+		color: black;
+		font-size: 1.2rem;
+		outline: none;
+		padding: 10px 15px;
+		width: 100%;
+	}
+
+	&__icon {
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+h3 {
+	font-family: 'Teko', sans-serif;
+	font-size: 3.6rem;
+	color: #fff;
+}
+
+
+.card-grid {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+
+	&__images {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px
+	}
+
+	&__card {
+		flex: 1 1 300px;
+	}
+
+	&__buttons {
+		margin-top: 4rem;
+	}
+
+}
