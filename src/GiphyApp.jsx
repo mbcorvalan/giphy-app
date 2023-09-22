@@ -4,13 +4,13 @@ import { AddCategory, GiftGrid } from './components'
 export const GiphyApp = () => {
 	const [category, setCategory] = useState([])
 
-	const AddnewCategory = (newCategory) => {
+	const AddNewCategory = (newCategory) => {
 		/* setCategory([...category, newCategory]) */
 		setCategory([newCategory])
 	}
 	return (
 		<>
-			<AddCategory onNewCategory={AddnewCategory} />
+			<AddCategory onNewCategory={AddNewCategory} />
 			{category?.map((category) => (
 				<GiftGrid key={category} category={category} />
 			))}

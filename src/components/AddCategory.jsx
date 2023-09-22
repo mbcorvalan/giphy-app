@@ -18,7 +18,7 @@ export const AddCategory = ({ onNewCategory }) => {
 	}
 
 	return (
-		<form className='form-gifts' onSubmit={onSubmit}>
+		<form className='form-gifts' onSubmit={onSubmit} aria-label='form'>
 			<input
 				type='text'
 				placeholder='Search GIPHY'

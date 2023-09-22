@@ -7,7 +7,6 @@ export const useFetchGifts = (category, page) => {
 
 	const getImages = async () => {
 		const images = await getGifts(category, page)
-		console.log(images)
 		setImages(images)
 		setIsLoading(false)
 	}
